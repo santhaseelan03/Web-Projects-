@@ -1,0 +1,261 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+}
+
+/* header */
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./Image/bg-1.webp);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+ }
+#logo{
+  list-style: none;
+ display: inline-block;
+ padding: 8px 12px;
+ color: #fff;
+ text-decoration: none;
+ font-size: 13px;
+ font-weight: 500;
+
+}
+nav{
+ display: flex;
+ padding: 2% 6%;
+ justify-content: space-between;
+ align-items: center;
+}
+.nav-links{
+ flex: 1;
+ text-align: right;
+}
+.nav-links ul li{
+ list-style: none;
+ display: inline-block;
+ padding: 8px 12px;
+ position: relative;
+}
+.nav-links ul li a{
+ color: #fff;
+ text-decoration: none;
+ font-size: 13px;
+}
+.nav-links ul li::after{
+ content: '';
+ width: 0%;
+ height: 2px;
+ background: #f44336;
+ display: block;
+ margin: auto ;
+ transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+ width: 100%;
+}
+.text-box{
+ width: 90%;
+ color: white;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ text-align: center;
+}
+.text-box h1{
+ font-size: 60px;
+}
+.text-box p{
+ margin: 10px 0 40px;
+ font-size: 14px;
+ color: white;
+}
+.hero{
+ display: inline-block;
+ text-decoration: none;
+ color: white;
+ border: 1px solid white;
+ padding: 12px 34px;
+ font-size: 13px;
+ background: transparent;
+ position: absolute;
+ cursor: pointer;
+ text-align: center;
+ margin-left: -110px;
+}
+.hero:hover{
+ border: 1px solid #f44336;
+ background: #f44336;
+ transition: 1s;
+}
+nav .fa{
+ display: none;
+}
+
+ 
+@media(max-width:700px){
+ .text-box h1{
+   font-size: 18px;
+  }
+  .nav-links ul li{
+   display: block;
+   
+   }
+   .nav-links {
+     position: absolute;
+     background: #f44336;
+     height: 100vh;
+     width: 200px;
+     top: 0;
+     right: -200px;
+     text-align: left;
+     z-index: 2;
+     transition: 1s;
+   }
+   nav .fa{
+     display: block;
+     color: #fff;
+     margin: 10px;
+     font-size: 22px;
+     cursor: pointer;
+   }
+   .nav-links ul{
+     padding: 30px;
+   }
+}
+/* About */
+.about-box{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+}
+.about{
+  /* margin-top: 150px; */
+  padding-top: 150px;
+}
+.about img{
+  width: 450px;
+  height: 350px;
+  margin-left: 100px;
+  border-radius: 15%;
+}
+.about-text-box{
+  width: 400px;
+  height: 500px;
+  margin-left: 100px;
+}
+.about-text-box h5{
+  font-size: 44px;
+}
+.at-box{
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: absolute;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 10%;
+}
+.at-box:hover{
+  border: 1px solid #f44336;
+  background: #f44336;
+  color: white;
+  transition: 1s;
+}
+
+/* services */
+.services{
+  min-height: 100vh;
+  width: 100%;
+  padding: 50px ;
+}
+.services h1{
+text-align: center;
+margin-bottom: 70px;
+}
+.services-box{
+  display: flex;   
+}
+.ser-box{
+  width: 350px;
+  height: 350px;
+  border: 1px solid #f44336;
+  border-radius: 3%;
+  padding: 10px;
+  margin-left: 60px;
+}
+/* blog */
+.blog{
+  min-height: 100vh;
+  width: 100%;
+  padding: 50px ;
+}
+.blog h2{
+  text-align: center;
+margin-bottom: 70px;
+}
+.blog-post{
+  display: flex;
+ }
+.blog-post div img{
+  width: 100px;
+  height: 100px;
+  border-radius: 60%;
+}
+.blog-box {
+  width: 600px;
+  height: 290px;
+  border: 1px solid #f44336;
+  border-radius: 3%;
+  padding: 10px;
+  margin-left: 60px;
+}
+/* contact */
+.contact{
+  min-height: 100vh;
+  width: 100%;
+
+}
+.contact h1{
+  text-align: center;
+margin-bottom: 70px;
+}
+.form-contact{
+  display: flex;
+}
+.form-img {
+  width: 500px;
+  height: 450px;
+  padding: 10px;
+  margin-left: 200px;
+  margin-right: 150px;
+  border: 1px solid #f44336;
+  border-radius: 3%;
+}
+.form-img img{
+    width:400px;
+    height: 200px;
+    border-radius: 10px;
+}
+.form-box form{
+  width: 350px;
+  height: 450px;
+  border: 1px solid #f44336;
+  border-radius: 3%;
+  padding: 10px;
+}
+/* footer */
+.footer{
+    height: 150px;
+    text-align: center;
+}
+.footer .icons{
+letter-spacing: 10px;
+}
